@@ -1,1 +1,1 @@
-# rsschool-cv
+https://Readberg.github.io/rsschool-cv/cv
