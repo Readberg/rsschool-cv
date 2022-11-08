@@ -5,14 +5,15 @@ html {
     scroll-behavior: smooth; 
 }
 :root {
-    --text-color: #c9c9c9;
-    --background-color: #1d1d1d;
-    --active-color: #00ff00;
+    --text-color: #848484;
+    --background-color: #FEFEFF;
+    --title-color: #1a1a1a;
+    --active-color: #2a6592;
 }
 
 
 body {
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Inter', sans-serif;
     min-height: 100vh;
     margin: 0; 
     padding: 0;
@@ -31,13 +32,17 @@ a {
 a:hover {
     color: var(--active-color);
 }
+h1,
+h2 {
+    color: var(--title-color); 
+}
 h1 {
     font-weight: 600;
-    font-size: 28px;
+    font-size: 22px;
 }
 h2{
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 
@@ -49,9 +54,8 @@ h2{
 .header {
     display: flex;
     max-width: 842px;
-    margin: 20px auto ;
-    align-items: center;
-    justify-content: space-between;
+    margin: 32px auto ;
+    align-items: flex-start;  
 }
 
 .preview {
@@ -62,8 +66,8 @@ h2{
 }
 
 .preview-avatar img{
-    max-height: 92px;
-    border-radius: 50%;
+    max-height: 70px;
+    border-radius: 8%;
 }
 
 .preview-text,
