@@ -20,7 +20,6 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 0;
@@ -51,6 +50,16 @@ h2{
     font-size: 27px;
 }
 
+h3 {
+    font-size: 15px;
+    color: var(--title-color);
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
 .section {
     width: 100%;
     padding: 42px 0;
@@ -64,10 +73,13 @@ h2{
 
 .header,
 .main-container {
-    display: flex;
     max-width: 920px;
     margin: auto ;
-    align-items: flex-start;  
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header */
@@ -83,10 +95,6 @@ h2{
     border-radius: 8%;
 }
 
-.main-container {
-    display: flex;
-    flex-direction: column;
-}
 
 /* Contact */
 
@@ -133,6 +141,32 @@ h2{
 .media-link:hover {
     color: var(--active-color);
     transition: .3s;
+}
+
+/* About me */
+
+.section-about,
+.section-education,
+.education-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-text {
+    max-width: 600px;
+    white-space: pre-wrap;
+}
+
+/* Education */
+
+.education-info {
+    gap: 70px;
+}
+
+.institution-info {
+    font-size: 15px;
+    display: flex;
+    gap: 10px;
 }
 
 @media (max-width: 768px) {
