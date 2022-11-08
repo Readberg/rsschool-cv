@@ -147,7 +147,8 @@ h4 {
 
 .section-about,
 .section-education,
-.education-info {
+.education-info,
+.section-experience {
     display: flex;
     justify-content: space-between;
 }
@@ -168,6 +169,25 @@ h4 {
     display: flex;
     gap: 10px;
 }
+
+/* Experience */
+
+.experience-logo {
+    margin: 15px;
+    width: 40px;
+}
+
+.section-experience {
+    justify-content: flex-start;
+    gap: 100px;
+}
+
+.experience-company {
+    display: flex;
+    gap: 20px;
+}
+
+
 
 @media (max-width: 768px) {
     .section {
