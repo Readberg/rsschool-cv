@@ -22,7 +22,6 @@ body {
     flex-direction: column;
     background-color: var(--background-color);
     color: var(--text-color);
-    line-height: 0;
 }
 
 a {
@@ -121,7 +120,7 @@ h4 {
 
 .contact-social {
     max-width: 440px;
-    padding: 15px 0;
+    padding: 45px 0;
     display: flex;
     flex-wrap: wrap;
     gap: 54px;
@@ -155,7 +154,6 @@ h4 {
 
 .about-text {
     max-width: 600px;
-    white-space: pre-wrap;
 }
 
 /* Education */
@@ -173,7 +171,6 @@ h4 {
 /* Experience */
 
 .experience-logo {
-    margin: 15px;
     width: 40px;
 }
 
