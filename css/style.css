@@ -42,11 +42,15 @@ h2 {
 h1 {
     font-weight: 600;
     font-size: 42px;
+    margin-bottom: 0;
 }
 
 h2{
     font-weight: 600;
     font-size: 27px;
+}
+.specialization {
+    margin-top: 0;
 }
 
 h3 {
@@ -63,11 +67,6 @@ h4 {
     width: 100%;
     padding: 42px 0;
     border-bottom: 1px solid #ECECEC;
-}
-
-.container {
-    max-width: 1240px;
-    margin: 0 auto;
 }
 
 .header,
@@ -166,11 +165,16 @@ h4 {
     font-size: 15px;
     display: flex;
     gap: 10px;
+    margin: 0;
+}
+.institution-title {
+    margin: 0;
 }
 
 /* Experience */
 
 .experience-logo {
+    margin: 25px;
     width: 40px;
 }
 
@@ -181,10 +185,49 @@ h4 {
 
 .experience-company {
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 
+.company-info {
+    display: flex;
+    flex-direction: column;
+}
 
+.company-text {
+    margin-top: 0;
+}
+
+.company-title {
+    margin-bottom: 0;
+}
+
+/* Skills */ 
+
+.section-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills {
+    margin-top: 20px;
+    display: flex;
+    gap: 130px
+}
+
+.skill-icon {
+    max-width: 60px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
 
 @media (max-width: 768px) {
     .section {
