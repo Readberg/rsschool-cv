@@ -27,10 +27,13 @@ body {
 a {
     text-decoration: none;
     color: var(--text-color);
+}
+
+.media-icon {
     transition: color .6s;
 }
 
-a:hover {
+.media-icon:hover {
     color: var(--active-color);
 }
 
@@ -197,7 +200,8 @@ h4 {
     margin-top: 0;
 }
 
-.company-title {
+.company-title,
+.project-stack {
     margin-bottom: 0;
 }
 
@@ -224,10 +228,40 @@ h4 {
     flex-direction: column;
     align-items: center;
 }
+
 .skill:hover {
     transform: scale(1.1);
     transition: .3s;
 }
+
+/* Projects */ 
+
+.project {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    margin-left: 20%;
+    padding: 50px 30px 35px 30px;
+    box-shadow: 0 0 10px 10px rgba(221, 221, 221, 1);
+}
+
+.project-name {
+    margin: 0;
+}
+
+.project-btn {
+    max-width: 20%;
+    padding: 10px 15px;
+    background-color: var(--title-color);
+    opacity: 1;
+    border-radius: 5px;
+}
+
+.project-link:hover {
+    transition: .5s;
+    color: var(--active-color);
+}
+
 
 @media (max-width: 768px) {
     .section {
