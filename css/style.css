@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+:root {
+    --text-color: #848484;
+    --background-color: #FEFEFF;
+    --title-color: #1a1a1a;
+    --active-color: #2a6592;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.media-icon {
+    transition: color .6s;
+}
+
+.media-icon:hover {
+    color: var(--active-color);
+}
+
+h1,
+h2 {
+    color: var(--title-color); 
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 42px;
+    margin-bottom: 0;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 27px;
+}
+.specialization {
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 15px;
+    color: var(--title-color);
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.section {
+    width: 100%;
+    padding: 42px 0;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header,
+.main-container,
+.footer-container {
+    max-width: 920px;
+    margin: auto ;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+.preview {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.preview-avatar img{
+    max-height: 105px;
+    border-radius: 8%;
+}
+
+
+/* Contact */
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-connect {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 0;
+}
+
+.connect-section {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+.connect-icon {
+    width: 24px;
+}
+
+.contact-social {
+    max-width: 440px;
+    padding: 45px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 54px;
+}
+
+.media-icon {
+    max-width: 16px;
+    margin-right: 13px;
+}
+
+.media-link,
+.connect-text {
+    font-weight: 600;
+    color: var(--title-color);
+}
+
+.media-link:hover {
+    color: var(--active-color);
+    transition: .3s;
+}
+
+/* About me */
+
+.section-about,
+.section-education,
+.education-info,
+.section-experience {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+/* Education */
+
+.education-info {
+    gap: 70px;
+}
+
+.institution-info {
+    font-size: 15px;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+}
+.institution-title {
+    margin: 0;
+}
+
+/* Experience */
+
+.experience-logo {
+    margin: 25px;
+    width: 40px;
+}
+
+.section-experience {
+    justify-content: flex-start;
+    gap: 100px;
+}
+
+.experience-company {
+    display: flex;
+    gap: 15px;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-text {
+    margin-top: 0;
+}
+
+.company-title,
+.project-stack {
+    margin-bottom: 0;
+}
+
+/* Skills */ 
+
+.section-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills {
+    margin-top: 20px;
+    display: flex;
+    gap: 130px
+}
+
+.skill-icon {
+    max-width: 60px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+/* Projects */ 
+
+.project {
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    max-width: 70%;
+    margin-left: 20%;
+    padding: 50px 30px 35px 30px;
+    box-shadow: 0 0 10px 10px rgba(221, 221, 221, 1);
+}
+
+.project-name {
+    margin: 0;
+}
+
+.project-btn {
+    max-width: 20%;
+    padding: 10px 15px;
+    background-color: var(--title-color);
+    opacity: 1;
+    border-radius: 5px;
+}
+
+.project-link:hover {
+    transition: .5s;
+    color: var(--active-color);
+}
+
+/* Code Example */
+
+.code-example {
+    background-color: var(--title-color);
+    border-radius: 3px;
+    box-shadow: 0 0 10px 10px rgba(221, 221, 221, 1);
+}
+
+.red-color {
+    color: #ff0000;
+}
+
+.yellow-color {
+    color: #FFFF00;
+}
+
+/* English */ 
+
+.section-english,
+.english-level {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.english-icon {
+    max-width: 100px;
+}
+
+.english-title {
+    margin: 10px auto 0 auto;
+    font-size: 40px;
+}
+
+.footer {
+    padding: 20px 0 0 0;
+    background-color: var(--title-color);
+    height: 100px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
