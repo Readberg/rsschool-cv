@@ -239,6 +239,7 @@ h4 {
 .project {
     display: flex;
     flex-direction: column;
+    border-radius: 3px;
     max-width: 70%;
     margin-left: 20%;
     padding: 50px 30px 35px 30px;
@@ -260,6 +261,22 @@ h4 {
 .project-link:hover {
     transition: .5s;
     color: var(--active-color);
+}
+
+/* Code Example */
+
+.code-example {
+    background-color: var(--title-color);
+    border-radius: 3px;
+    box-shadow: 0 0 10px 10px rgba(221, 221, 221, 1);
+}
+
+.red-color {
+    color: #ff0000;
+}
+
+.yellow-color {
+    color: #FFFF00;
 }
 
 
