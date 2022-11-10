@@ -73,7 +73,8 @@ h4 {
 }
 
 .header,
-.main-container {
+.main-container,
+.footer-container {
     max-width: 920px;
     margin: auto ;
 }
@@ -297,6 +298,17 @@ h4 {
     font-size: 40px;
 }
 
+.footer {
+    padding: 20px 0 0 0;
+    background-color: var(--title-color);
+    height: 100px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 @media (max-width: 768px) {
     .section {
